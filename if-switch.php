@@ -1,13 +1,19 @@
 <?php
-$edad = 20;
+$edad = 21;
 
-if ($edad < 17) {
-    echo "Menor de edad";
-} else if ($edad < 20) {
-    echo "menor a 20";
-} elseif ($edad < 25) {
-    echo "menor a 25";
-} else {
-    echo "mayor de edad";
+switch ($edad) {
+    case 18:
+        echo "Tienes 18 años";
+        break;
+    case 20:
+        echo "Tienes 20 años";
+        break;
+    case 21:
+        echo "Tienes 21 años";
+        break;
+    default:
+        // código si no coincide ningún caso
+        echo "Edad no especificada";
+        break;
 }
 ?>
